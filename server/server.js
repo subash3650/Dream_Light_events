@@ -33,6 +33,6 @@ app.post("/api/add-event", async (req, res) => {
   res.json({ success: true });
 });
 
-app.listen(5173, () => {
+app.listen(PORT, () => {
   console.log("API server running on http://localhost:5173");
 });
