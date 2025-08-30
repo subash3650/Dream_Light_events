@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Wedding Event Management Design System - Dark Elegant Theme */
+
+@layer base {
+  :root {
+    /* Brand Colors - Deep & Elegant */
+    --background: 220 13% 9%;           /* Deep charcoal */
+    --foreground: 43 96% 90%;           /* Warm cream */
+    
+    --surface: 220 13% 12%;             /* Slightly lighter charcoal */
+    --surface-foreground: 43 96% 90%;
+    
+    --card: 220 13% 12%;
+    --card-foreground: 43 96% 90%;
+    
+    --popover: 220 13% 15%;
+    --popover-foreground: 43 96% 90%;
+    
+    /* Gold Accent - Luxury Touch */
+    --primary: 43 96% 65%;              /* Elegant gold */
+    --primary-foreground: 220 13% 9%;
+    --primary-glow: 43 96% 75%;         /* Lighter gold for effects */
+    
+    --secondary: 220 13% 18%;           /* Medium charcoal */
+    --secondary-foreground: 43 96% 90%;
+    
+    --muted: 220 13% 16%;               /* Subtle background */
+    --muted-foreground: 43 30% 70%;     /* Muted warm text */
+    
+    --accent: 43 96% 65%;               /* Gold accent */
+    --accent-foreground: 220 13% 9%;
+    
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 43 96% 90%;
+    
+    --border: 220 13% 20%;              /* Subtle borders */
+    --input: 220 13% 18%;
+    --ring: 43 96% 65%;
+    
+    --radius: 0.75rem;
+    
+    /* Custom Design Tokens */
+    --gradient-hero: linear-gradient(135deg, hsl(220 13% 9%) 0%, hsl(220 13% 12%) 50%, hsl(220 13% 15%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(43 96% 65%) 0%, hsl(43 96% 75%) 100%);
+    --shadow-elegant: 0 25px 50px -12px hsl(220 13% 5% / 0.6);
+    --shadow-gold-glow: 0 0 30px hsl(43 96% 65% / 0.3);
+    
+    /* Typography Scale */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+    background: hsl(var(--background));
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+  }
+}
+
+@layer components {
+  .text-gradient-gold {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .shadow-elegant {
+    box-shadow: var(--shadow-elegant);
+  }
+  
+  .shadow-gold-glow {
+    box-shadow: var(--shadow-gold-glow);
+  }
+  
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
