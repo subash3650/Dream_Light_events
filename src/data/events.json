@@ -9,7 +9,7 @@
   },
   {
     "id": 2,
-    "name": "Emma & James Vineyard Celebration", 
+    "name": "Emma & James Vineyard Celebration",
     "description": "Rustic elegance among the vines with gold accents and sunset views",
     "date": "2024-05-20",
     "type": "Wedding",
@@ -38,5 +38,13 @@
     "date": "2024-02-14",
     "type": "Charity Event",
     "image": "https://images.unsplash.com/photo-1478146896981-b80fe463b330?w=800&h=600&fit=crop&crop=center"
+  },
+  {
+    "id": 6,
+    "name": "Subash P",
+    "description": "dh",
+    "date": "2025-08-27",
+    "type": "Marriage",
+    "image": "www"
   }
 ]

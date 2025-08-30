@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Events from "./pages/Events";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
+import Admin from "./pages/admin";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ const App = () => (
             <Route path="/about" element={<About />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
+            <Route path="/admin" element={<Admin />} />
           </Routes>
         </Layout>
       </BrowserRouter>

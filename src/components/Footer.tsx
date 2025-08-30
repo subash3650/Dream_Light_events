@@ -1,7 +1,9 @@
 import { Heart, Phone, Mail, MapPin, Instagram, Facebook, Twitter } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const router = useNavigate();
   return (
     <footer className="bg-surface border-t border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -89,10 +91,7 @@ const Footer = () => {
             <button className="hover:text-primary transition-smooth">Terms of Service</button>
             <button 
               className="text-primary hover:text-primary-glow transition-smooth font-medium"
-              onClick={() => {
-                // TODO: Open admin modal
-                alert('Admin panel coming soon!');
-              }}
+              onClick={() => router('/admin')}
             >
               Admin
             </button>
